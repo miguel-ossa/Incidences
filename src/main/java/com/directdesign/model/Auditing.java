@@ -11,16 +11,16 @@ import com.sun.istack.NotNull;
 public class Auditing {
 
 	@NotNull
-	private Long 			createdBy;
+	private Long createdBy;
 
 	@NotNull
-	private LocalDateTime 	createdDate;
+	private LocalDateTime createdDate;
 	
 	@NotNull
-	private Long 		  	lastModifiedBy;
+	private Long lastModifiedBy;
 	
 	@NotNull
-	private LocalDateTime 	lastModifiedDate;
+	private LocalDateTime lastModifiedDate;
 	
 	public Long getCreatedBy() {
 		return createdBy;
