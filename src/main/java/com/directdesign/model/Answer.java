@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import com.sun.istack.NotNull;
 
 @Entity
-public class Answer {
+public class Answer extends Auditing {
 
 	@Id
 	@GeneratedValue
