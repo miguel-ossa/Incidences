@@ -1,11 +1,26 @@
 package com.directdesign.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+import com.sun.istack.NotNull;
+
+@Entity
 public class Incidence {
 
+	@Id
+	@GeneratedValue
 	private Long id;
+	
+	@NotNull
 	private String title;
+	
+	@NotNull
 	private String description;
+	
 	private Boolean solved;
+	
 	public String getDescription() {
 		return description;
 	}

@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import com.sun.istack.NotNull;
+
 @Entity
 public class Person {
 
@@ -11,10 +13,18 @@ public class Person {
 	@GeneratedValue
 	private Long id;
 	
+	@NotNull
 	private String name;
+	
+	@NotNull
 	private String email;
+	
 	private Boolean esAdmin;
+	
+	@NotNull
 	private String user;
+	
+	@NotNull
 	private String password;
 	
 	public String getEmail() {

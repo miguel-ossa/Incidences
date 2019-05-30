@@ -2,15 +2,26 @@ package com.directdesign.model;
 
 
 import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
+
+import com.sun.istack.NotNull;
 
 @Entity
 public class Auditing {
 
+	@NotNull
 	private Long 			createdBy;
+
+	@NotNull
 	private LocalDateTime 	createdDate;
+	
+	@NotNull
 	private Long 		  	lastModifiedBy;
+	
+	@NotNull
 	private LocalDateTime 	lastModifiedDate;
+	
 	public Long getCreatedBy() {
 		return createdBy;
 	}

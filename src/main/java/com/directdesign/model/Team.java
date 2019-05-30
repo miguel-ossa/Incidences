@@ -4,14 +4,21 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import com.sun.istack.NotNull;
+
 @Entity
 public class Team {
 
 	@Id
 	@GeneratedValue
 	private Long id;
+	
+	@NotNull
 	private String name;
+
+	@NotNull
 	private String email;
+	
 	public String getEmail() {
 		return email;
 	}
